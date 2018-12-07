@@ -1,0 +1,23 @@
+<view class='body'>
+<scroll-view scroll-y='true' class='left' bindtap='changeNav'>
+<view wx:for='{{leftList}}' wx:key="{{index}}"  data-id='{{item.id}}' class="{{item.id==currentId?'active':''}}">
+{{item.name}}
+</view>
+</scroll-view>
+
+<scroll-view scroll-y='true' class='right' bindscrolltolower='showmore'>
+<view class='item' wx:for='{{rightList}}' wx:key="{{index}}">
+<image src='{{item.header}}' class='tx'></image>
+<view class='info'>
+<view class='name'>{{item.screen_name}}</view>
+<view class='number'>{{item.fans_count}}</view>
+</view>
+<view class='gz'>
++关注
+</view>
+</view>
+<view class='nomore' wx:if='{{more}}'>没有更多</view>
+</scroll-view>
+</view>
+
+

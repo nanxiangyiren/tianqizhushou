@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/me/me",
+    
+    "pages/comment/comment",
+    "pages/attention/attention",
+    "pages/recommend/recommend"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/comment/comment",
+        "text": "推荐",
+        "iconPath": "images/recommend1.png",
+        "selectedIconPath": "images/recommend2.png"
+      },
+      {
+        "pagePath": "pages/attention/attention",
+        "text": "关注",
+        "iconPath": "images/attention1.png",
+        "selectedIconPath": "images/attention2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me1.png",
+        "selectedIconPath": "images/me2.png"
+      }
+    ]
+  }
+}

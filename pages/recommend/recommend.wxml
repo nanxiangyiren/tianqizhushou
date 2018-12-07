@@ -1,0 +1,46 @@
+<!--pages/recommend/recommend.wxml-->
+<view class='items'>
+<view class='hotitems' wx:if='{{ishot}}'>
+<view class='title'>最热评论</view>
+<view class='item' wx:for='{{hotList}}' wx:key="{{index}}">
+  <view class='userinfo'>
+    <image src='{{item.user.profile_image}}' class='tx'></image>
+    <text class='name'>
+    {{item.user.username}}
+    </text>
+    <text class='number'>
+    {{item.like_count}} 
+    </text>
+    <image src='../../images/zan.png' class='zan'></image>
+  </view>
+  <view class='itentext'>
+  <text class='number1'>{{item.like_count}}</text>
+  <text class='text'>
+  {{item.content}}
+  </text>
+  </view>
+</view>
+
+<view class='line'></view>
+</view>
+<view class='normalitems'>
+<view class='item' wx:for='{{dataList}}' wx:key="{{index}}">
+  <view class='userinfo'>
+    <image src='{{item.user.profile_image}}' class='tx'></image>
+    <text class='name'>
+    {{item.user.username}}
+    </text>
+    <text class='number'>
+    {{item.like_count}}
+    </text>
+    <image src='../../images/zan.png' class='zan'></image>
+  </view>
+  <view class='itentext'>
+  <text class='number1'>{{item.like_count}}</text>
+  <text class='text'>
+  {{item.content}}
+  </text>
+  </view>
+</view>
+</view>
+</view>

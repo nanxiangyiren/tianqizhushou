@@ -1,0 +1,82 @@
+.userinfo
+{
+  height: 100rpx;
+  width: 100%;
+}
+
+.tx
+{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.items
+{
+  padding: 20rpx;
+}
+
+.item
+{
+  clear: both;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 30rpx;
+}
+
+.hotitems .title
+{
+  color: #333;
+  font-size: 30rpx;
+}
+
+.name
+{
+  float: left;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.zan
+{
+  width: 70rpx;
+  height: 70rpx;
+  float: right;
+  margin-top: 15rpx;
+}
+
+.number
+{
+  float: right;
+  color: #333;
+  font-size: 30rpx;  
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.number1
+{
+  display: inline-block;
+  background-color: #d81e06;
+  color: #fff;
+  min-width: 80rpx;
+  text-align: center;
+  font-size: 20rpx;
+}
+
+.text
+{
+  display: inline-block;
+  font-size: 26rpx;
+  color: #444;
+  margin-left: 20rpx;
+}
+
+.line{
+  height:16rpx;
+  width: 100%;
+  background-color: #ccc;
+  margin: 20rpx 0;
+}

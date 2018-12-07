@@ -1,0 +1,134 @@
+page
+{
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+swiper
+{
+  margin-top: 70rpx;
+}
+swiper image
+{
+  width: 100%;
+  height: 100%
+}
+
+.nav
+{
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  height: 70rpx;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff
+}
+
+.navitem
+{
+  padding:5rpx 0;
+  flex: 1;
+  line-height: 70rpx;
+  text-align: center;
+  color:#333;
+  font-size: 30rpx;
+}
+
+.navitem.active
+{
+  color:#d81e06;
+}
+
+.items
+{
+  width: 100%;
+  padding: 16rpx;
+  background-color: #fff;
+}
+
+.top
+{
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+}
+
+.top image
+{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  float: left
+}
+
+.top .info
+{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.name
+{
+  font-size: 30rpx;
+}
+
+ .time
+{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+}
+
+.top image.more
+{
+  position: absolute;
+  top: 50%;
+  margin-top: -20rpx;
+  right:80rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.itemText
+{
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.center view,.center audio,.center image,.center video
+{
+  display: block;
+  margin: 20rpx auto;
+}
+
+.bottom
+{
+  margin: 20rpx 0;
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+}
+
+.bottom view
+{
+  flex: 1;
+  overflow: hidden;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  vertical-align: middle;
+}
+
+.bottom view image
+{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}

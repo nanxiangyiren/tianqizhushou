@@ -1,0 +1,6 @@
+
+<view>
+  <image></image>
+  <text class='title'>hellow,{{}}</text>
+  <text class='tips'>开启你的浪漫之旅</text>
+</view>

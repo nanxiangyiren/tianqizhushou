@@ -1,0 +1,50 @@
+<swiper indicator-dots='true' autoplay='true' interval='3000' circular='true'>
+    <swiper-item wx:for="{{slider}}" wx:key="{{index}}">
+      <image src="{{item.picUrl}}"></image>
+    </swiper-item>
+</swiper>
+<view class='nav' bindtap='navchange' bindtouchstart='tstart' bindtouchmove='tmove' bindtouchend='tend'>
+  <view class="{{index==currentItem?'navitem active':'navitem'}}" wx:for='{{nav}}' wx:key='{{index}}' data-itemnumber='{{index}}'>
+  {{item.text}}
+  </view>
+</view>
+
+<view class='items' wx:for='{{dataList}}' wx:key='{{index}}'>
+  <view class='item'>
+    <view class='top'>
+      <image src='{{item.profile_image}}'></image>
+      <view class='info'>
+        <view class='name'>{{item.name}}</view>
+        <view class='time'>{{item.created_at}}</view>
+        <image src='../../images/more.png' class='more'></image>
+      </view>
+    </view>
+    <view class='center'>
+      <view class='itemText' >
+        {{item.text}}
+      </view>
+      <video wx:if='{{item.type=="41"}}' controls='true' src='{{item.videouri}}'></video>
+      <image wx:if='{{item.type=="10"}}' src='{{item.image0}}' mode='top'></image>
+      <audio wx:if='{{item.type=="31"}}' src='{{item.voiceuri}}'></audio>
+    </view>
+    <view class='bottom'>
+      <view>
+        <image src='../../images/zan.png'></image>
+        {{item.love}}
+      </view>
+      <view>
+        <image src='../../images/cai.png'></image>
+        {{item.hate}}
+      </view>
+      <view  data-id='{{item.id}}' bindtap='showpinlun'>
+        <image src='../../images/pinlun.png'>       
+        </image>
+        {{item.comment}}
+      </view>
+      <view>
+        <image src='../../images/zhuanfa.png'></image>
+        {{item.repost}}
+      </view>
+    </view>
+  </view>
+</view>
